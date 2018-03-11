@@ -2,7 +2,6 @@
 {
     using System;
 
-    // Singleton Design Pattern
     class Program
     {
         static void Main(string[] args)
@@ -29,7 +28,7 @@
             Console.ReadLine();
         }
     }
-    // Constructor Overload
+
     class CustomerManager
     {
         private int _count = 10;
@@ -92,7 +91,6 @@
         }
     }
 
-    // Constructor Injection
     class EmployeeManager
     {
         private ILogger _logger;
@@ -123,7 +121,6 @@
         }
     }
 
-    // Parametreyi base sınıf için kullanıyor
     class PersonManager : BaseClass
     {
         public PersonManager(string entity) : base(entity)
@@ -138,9 +135,6 @@
         }
     }
 
-    // Instance oluşturulmaz.
-    // Ortak nesnelerdir.
-    // Arkaplanda tek bir nesne create edilip, tüm uygulama onu kullanır.
     static class Teacher
     {
         public static int Number { get; set; }
@@ -148,7 +142,6 @@
 
     static class Utilities
     {
-        // Validations operations
         static Utilities()
         {
 
