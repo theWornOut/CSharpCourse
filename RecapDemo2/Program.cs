@@ -18,7 +18,6 @@
 
     class CustomerManager
     {
-        // Property Injection
         public ILogger Logger { get; set; }
         public void Add()
         {
