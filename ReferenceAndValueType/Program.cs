@@ -3,9 +3,9 @@
     using System;
     using System.Data;
 
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             int number1 = 10;
             int number2 = 20;
