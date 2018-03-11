@@ -27,7 +27,6 @@
         }
     }
 
-    // SOLID - Interface Segregation
     interface IWorker
     {
         void Work();
