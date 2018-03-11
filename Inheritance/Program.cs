@@ -32,8 +32,6 @@
         }
     }
 
-    // Bir nesneyi bir kez inheritance edebiliriz.
-    // Önce inheritance yazılır, ardından varsa interfaces yazılır.
     class Person2
     {
 
