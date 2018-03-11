@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace Interfaces
+﻿namespace Interfaces
 {
-    // Polymorphism - Çok biçimlilik
-    // Bir nesneyi farklı amaçlarla implemente edip, o implementasyonun belli bir kısmına veya tamamına ulaşmaktır.
+    using System;
+
     interface ICustomerDal
     {
         void Add();

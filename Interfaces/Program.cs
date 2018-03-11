@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace Interfaces
+﻿namespace Interfaces
 {
+    using System;
+
     internal class Program
     {
         private static void Main(string[] args)
@@ -34,9 +34,6 @@ namespace Interfaces
         }
     }
 
-    // Temel bir nesne oluşturup, bütün nesneleri interface üzerinden üretmektir.
-    // Interface tek başına new'lenemez. Instance oluşturulamaz.
-    // Soyut nesnedir.
     internal interface IPerson
     {
         int Id { get; set; }
@@ -44,7 +41,6 @@ namespace Interfaces
         string LastName { get; set; }
     }
 
-    // Somut nesnedir.
     class Customer : IPerson
     {
         public int Id { get; set; }
@@ -54,7 +50,6 @@ namespace Interfaces
         public string Address { get; set; }
     }
 
-    // Somut nesnedir.
     class Student : IPerson
     {
         public int Id { get; set; }
@@ -64,7 +59,6 @@ namespace Interfaces
         public string Departmant { get; set; }
     }
 
-    // Somut nesnedir.
     class Worker : IPerson
     {
         public int Id { get; set; }
