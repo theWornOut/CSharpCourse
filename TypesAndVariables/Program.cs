@@ -6,14 +6,13 @@
     {
         private static void Main(string[] args)
         {
-            // Value Type
-            const byte numberByte = 255; // 8 byte
-            const short numberShort = 32767; // 16 byte
-            const int numberInt = 2147483647; // 32 byte
-            const long numberLong = 214748364741324; // 64 byte
+            const byte numberByte = 255;
+            const short numberShort = 32767;
+            const int numberInt = 2147483647;
+            const long numberLong = 214748364741324;
 
-            const double numberDouble = 10.4; // 64 byte
-            const decimal numberDecimal = 64.63M; // 64 byte
+            const double numberDouble = 10.4;
+            const decimal numberDecimal = 64.63M;
             Console.WriteLine($"{numberByte}" + " - " + $"{numberShort}" + " - " + $"{numberInt}" + " - " + $"{numberLong}" + " - " + $"{numberDouble}" + " - " + $"{numberDecimal}");
 
             const bool condition = true;
@@ -28,7 +27,6 @@
             var varType = "Magic";
             Console.WriteLine($"{varType}");
 
-            // Reference Type
             const string referenceType = "Reference type";
             Console.WriteLine($"{referenceType}");
 
