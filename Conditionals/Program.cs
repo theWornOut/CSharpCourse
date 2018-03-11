@@ -8,7 +8,6 @@
         {
             const int number = 10;
 
-            // İf - Else If - Else
             if (number == 10)
             {
                 Console.WriteLine("Number is 10 !");
@@ -22,10 +21,8 @@
                 Console.WriteLine("Number is not 10 or 20 !");
             }
 
-            // Single Line If - Ternary If
             Console.WriteLine(number == 11 ? "Number is 10 !" : "Number is not 10 !");
 
-            // Switch - Case
             switch (number)
             {
                 case 11:
@@ -39,7 +36,6 @@
                     break;
             }
 
-            // Demo
             if (number >= 0 && number <= 100)
             {
                 Console.WriteLine("Number is between 0-100");
@@ -53,7 +49,6 @@
                 Console.WriteLine("Number is less than 0 or greater than 200");
             }
 
-            // Nested If
             if (number < 100)
             {
                 if (number >= 90 && number < 95)
