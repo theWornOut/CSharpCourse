@@ -15,8 +15,6 @@
         }
     }
 
-    // Çoğu operasyonda aynı işlemi gerçekleştirecek, bazı yerlerde değişecekse metot ezilmeli.
-    // Override edilmeli. Bunun için virtual metot tanımlanmalı.
     class Database
     {
         public virtual void Add()
@@ -35,7 +33,7 @@
         public override void Add()
         {
             Console.WriteLine("Added by Sql Code");
-            //base.Add();
+            base.Add();
         }
     }
 
