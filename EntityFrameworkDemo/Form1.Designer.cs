@@ -49,10 +49,15 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtUnitPrice = new System.Windows.Forms.TextBox();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnGetById = new System.Windows.Forms.Button();
+            this.gbGetById = new System.Windows.Forms.GroupBox();
             this.gbDelete.SuspendLayout();
             this.gbUpdate.SuspendLayout();
             this.gbAdd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
+            this.gbGetById.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnRemove
@@ -68,7 +73,7 @@
             // gbDelete
             // 
             this.gbDelete.Controls.Add(this.btnRemove);
-            this.gbDelete.Location = new System.Drawing.Point(500, 215);
+            this.gbDelete.Location = new System.Drawing.Point(500, 262);
             this.gbDelete.Name = "gbDelete";
             this.gbDelete.Size = new System.Drawing.Size(238, 49);
             this.gbDelete.TabIndex = 13;
@@ -86,7 +91,7 @@
             this.gbUpdate.Controls.Add(this.label5);
             this.gbUpdate.Controls.Add(this.label6);
             this.gbUpdate.Controls.Add(this.txtUnitPriceUpdate);
-            this.gbUpdate.Location = new System.Drawing.Point(256, 215);
+            this.gbUpdate.Location = new System.Drawing.Point(256, 262);
             this.gbUpdate.Name = "gbUpdate";
             this.gbUpdate.Size = new System.Drawing.Size(238, 152);
             this.gbUpdate.TabIndex = 12;
@@ -186,7 +191,7 @@
             this.gbAdd.Controls.Add(this.label3);
             this.gbAdd.Controls.Add(this.label2);
             this.gbAdd.Controls.Add(this.txtUnitPrice);
-            this.gbAdd.Location = new System.Drawing.Point(12, 215);
+            this.gbAdd.Location = new System.Drawing.Point(12, 262);
             this.gbAdd.Name = "gbAdd";
             this.gbAdd.Size = new System.Drawing.Size(238, 129);
             this.gbAdd.TabIndex = 11;
@@ -245,17 +250,57 @@
             // 
             this.dgvProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProducts.Location = new System.Drawing.Point(12, 12);
+            this.dgvProducts.Location = new System.Drawing.Point(12, 38);
             this.dgvProducts.Name = "dgvProducts";
-            this.dgvProducts.Size = new System.Drawing.Size(726, 197);
+            this.dgvProducts.Size = new System.Drawing.Size(726, 218);
             this.dgvProducts.TabIndex = 10;
             this.dgvProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProducts_CellClick);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(545, 15);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(41, 13);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "Search";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(604, 12);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(134, 20);
+            this.txtSearch.TabIndex = 15;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // btnGetById
+            // 
+            this.btnGetById.Location = new System.Drawing.Point(98, 14);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(134, 23);
+            this.btnGetById.TabIndex = 16;
+            this.btnGetById.Text = "Get By Id";
+            this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
+            // 
+            // gbGetById
+            // 
+            this.gbGetById.Controls.Add(this.btnGetById);
+            this.gbGetById.Location = new System.Drawing.Point(500, 317);
+            this.gbGetById.Name = "gbGetById";
+            this.gbGetById.Size = new System.Drawing.Size(238, 49);
+            this.gbGetById.TabIndex = 17;
+            this.gbGetById.TabStop = false;
+            this.gbGetById.Text = "Get By Id";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(751, 371);
+            this.ClientSize = new System.Drawing.Size(751, 420);
+            this.Controls.Add(this.gbGetById);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.gbDelete);
             this.Controls.Add(this.gbUpdate);
             this.Controls.Add(this.gbAdd);
@@ -269,7 +314,9 @@
             this.gbAdd.ResumeLayout(false);
             this.gbAdd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).EndInit();
+            this.gbGetById.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -296,6 +343,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtUnitPrice;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnGetById;
+        private System.Windows.Forms.GroupBox gbGetById;
     }
 }
 

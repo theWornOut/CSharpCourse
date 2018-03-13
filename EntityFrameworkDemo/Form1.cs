@@ -21,6 +21,12 @@ namespace EntityFrameworkDemo
             dgvProducts.DataSource = _productDal.GetAll();
         }
 
+        private void SearchProducts(string key)
+        {
+            //dgvProducts.DataSource = _productDal.GetAll().Where(x => x.Name.ToLower().Contains(key.ToLower())).ToList();
+            dgvProducts.DataSource = _productDal.GetByName(key);
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             _productDal.Add(new Product
@@ -69,6 +75,16 @@ namespace EntityFrameworkDemo
                 txtUnitPriceUpdate.Text = dgvProducts.CurrentRow.Cells[2].Value.ToString();
                 txtStockAmountUpdate.Text = dgvProducts.CurrentRow.Cells[3].Value.ToString();
             }
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(txtSearch.Text);
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            _productDal.GetById(1);
         }
     }
 }
